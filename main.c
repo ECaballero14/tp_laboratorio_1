@@ -1,105 +1,90 @@
-#include <stdio.h>;
-#include <stdlib.h>;
-#include "funcionesmatematicas.c";
-#include "otrasfunciones.h";
+#include <stdlib.h>
+#include "matematicas1.h"
+#include "funciones1.h"
 
-
-void main(void)
+int main()
 {
+    int flag=0;
 
-int flag=0;
+    int A,B,X,Y;
 
-int A,B,X,Y;
+    int menu;
 
-int ope;
+    int resultsuma=0;
 
-int resultsuma=0;
+    int resulresta=0;
 
-int resulresta=0;
+    int resultdiv=0;
 
-int resultdiv=0;
+    int resultmult=0;
 
-int resultmult=0;
+    int resultfacta=1;
 
-int resultfacta=1,resultfactb=1;
+    char rta='S';
 
-char rta='S';
+    printf("\n\\\\BIENVENIDO A Programa CALCULADORA----////\n");
 
-     do{
-       printf("\nIngrese primer numero:");
+    do{
+        //menu de opciones
+        printf("\n1- Ingresar primer operando (A=x)\n");
+        printf("2- Ingresar segundo operando (B=y)\n");
+        printf("3- Calcular la suma (A+B)\n");
+        printf("4- Calcular la resta (A-B)\n");
+        printf("5- Calcular la division (A/B)\n");
+        printf("6- Calcular la multiplicacion (A*B)\n");
+        printf("7- Calcular el factorial (A!)\n");
+        printf("8- Salir\n");
+        scanf("%d",&menu);
 
-       scanf("%d",&X);
+        switch(menu){
 
-       A=X;
-
-       printf("\nIngrese segundo numero:");
-
-       scanf("%d",&Y);
-
-       B=Y;
-
-       printf("\nIngrese una operacion matematica a realizar 1-Sumar , 2-Restar , 3-division , 4-multiplicacion y 5 factorial:");
-
-       scanf("%d",&ope);
-
-       switch(ope){
-       case 1:
+        //ingreso 1er operando
+        case 1:
+            printf("\nIngrese primer operando: ");
+            scanf("%d",&X);
+            A=X;
+            break;
+        //ingreso segundo operando
+        case 2:
+            printf("\nIngrese  operando: ");
+            scanf("%d",&Y);
+            B=Y;
+            break;
+      case 3:
               resultsuma=suma(A,B);
-
               break;
-       case 2:
+       case 4:
               resulresta=resta(A,B);
 
               break;
-       case 3:
-              resultdiv=division(A,B);
-
-              break;
-       case 4:
-              resultmult=multiplicar(A,B);
-
-              break;
        case 5:
+               resultdiv=division(A,B);
 
-               resultfacta=factorial(A,B);
-
-               resultfactb=factorial(A,B);
+                break;
+       case 6:
+               resultmult=multiplicar(A,B);
 
                break;
+        case 7:
+               resultfacta=factorial(A,B);
+
+               break;
+
+        case 8:
+
+               printf("\nQuiere continuar en la calculadora[S/N]:");
+
+               scanf("%c",&rta);
+
+               break;
+
        default:
-               printf("Error de ingreso operacion matematica.Reingrese la correcta");
-       }
-       printf("\nReingrese numeros.Continuar[S/N]:");
 
-       fflush(stdin);
-
-       scanf("%c",&rta);
-
-       rta=toupper(rta);
-
-     }while(rta!='S');
-
-      printf("\nLa suma total es: %d",resultsuma);
-
-      printf("\nLa resta total es: %d",resulresta);
-
-      if(flag==1){
-
-        printf("\nNo se puede dividir por cero");
+            printf("Error de ingreso operacion matematica.Reingrese la correcta");
       }
 
-      else if (flag==0){
+    }while(rta!='S');
 
-        printf("\nLa division total es: %d",resultdiv);
-      }
-
-      printf("\nLa multplicacion total es: %d",resultmult);
-
-      printf("\nEl factorial de A es: %d",resultfacta);
-
-      printf("\nEl factorial de B es: %d",resultfactb);
-
-      return 0;
-
-}
+       return 0;
+ }
 
