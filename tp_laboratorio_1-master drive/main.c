@@ -176,7 +176,7 @@ int main()
                         if(flag2==1)
                         {
 
-                          printf("\ne)El resultado de A es %d: y el factorial de B es d%: \n",resultfacta,resultfactb);
+                          printf("\ne)El resultado de A es %d: y el factorial de B es %d: \n",resultfacta,resultfactb);
                         }
 
                         break;
