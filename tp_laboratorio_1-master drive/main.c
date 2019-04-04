@@ -6,7 +6,9 @@ int main()
 {
     int flag=0;
 
-    int bandera=0;
+    int flag1=0;
+
+    int flag2=0;
 
     int A,B,X,Y;
 
@@ -21,8 +23,6 @@ int main()
     int resultmult=0;
 
     int resultfacta=1,resultfactb=1;
-
-    int bandera1;
 
     char resultados,ope;
 
@@ -91,19 +91,35 @@ int main()
                           resultsuma=suma(A,B);
                           break;
                   case 'b':
-                          resultmult=resta(A,B);
+                          resultresta=resta(A,B);
                           break;
                   case 'c':
-                          resultdiv=division(A,B);
-                           break;
+                           if(A!=0 || B!=0){
+                             resultdiv=division(A,B);
+                             flag1=0;
+                             break;
+                           }
+                           flag1=1;
                   case 'd':
                            resultmult=multiplicar(A,B);
                            break;
                   case 'e':
 
-                          resultfacta=factorial(A,B);
+                          if(A<0 || A==0||B<0 || B==0)
 
-                          resultfactb=factorial(A,B);
+                          {
+                             flag2=0;
+                          }
+
+                          else
+
+                          {
+                            resultfacta=factorial(A,B);
+
+                            resultfactb=factorial(A,B);
+
+                            flag2=1;
+                          }
 
                           break;
                   default:
@@ -137,32 +153,30 @@ int main()
                         printf("\nb)El resultado de A-B es %d:\n ",resultresta);
                         break;
                   case  'c':
-
-                        if(bandera==1)
+                        if(flag1==1)
                         {
                             printf("\nNo se puede dividir por cero");
                         }
 
-                        if(bandera==0)
+                        if(flag1==0)
                         {
                             printf("\nc)El resultado de A/B es %d:\n ",resultdiv);
                         }
-
                         break;
                   case  'd':
                         printf("\nd)El resultado de A*B es %d:\n ",resultmult);
                         break;
                   case  'e':
-                        if(bandera1==1 || bandera1==2)
+                        if(flag2==0)
                         {
 
                           printf("No se puede hacer su factorial correspodiente");
                         }
 
-                        if(bandera1==0)
+                        if(flag2==1)
                         {
 
-                          printf("\ne)El resultado de A es %d: y el factorial de B es d%:   \n",resultfacta,resultfactb);
+                          printf("\ne)El resultado de A es %d: y el factorial de B es d%: \n",resultfacta,resultfactb);
                         }
 
                         break;
