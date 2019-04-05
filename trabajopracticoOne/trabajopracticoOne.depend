@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1554495672 source:d:\ezequiel caballero 1 cuatri 2019\programacion y laboratorio\tp\trabajopracticoone\funcion.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+	"funcion.h"
+
+1554497815 source:d:\ezequiel caballero 1 cuatri 2019\programacion y laboratorio\tp\trabajopracticoone\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+	"funcion.h"
+
+1554494420 d:\ezequiel caballero 1 cuatri 2019\programacion y laboratorio\tp\trabajopracticoone\funcion.h
+
