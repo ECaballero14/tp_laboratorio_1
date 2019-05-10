@@ -1,0 +1,76 @@
+# depslib dependency file v1.0
+1538343296 source:c:\users\home\desktop\tp2 programacion\tp 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayEmployees.h"
+
+1538343318 c:\users\home\desktop\tp2 programacion\tp 2\arrayemployees.h
+
+1538343289 source:c:\users\home\desktop\tp2 programacion\tp 2\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+
+1538435837 source:c:\users\alumno\desktop\tp 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayEmployees.c"
+
+1538417006 c:\users\alumno\desktop\tp 2\arrayemployees.h
+
+1538434671 source:c:\users\alumno\desktop\tp 2\arrayemployees.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1538436002 c:\users\alumno\desktop\tp 2\arrayemployees.c
+
+1538441376 source:d:\tp 2\arrayemployees.c
+	"ArrayEmployees.h"
+	<stdio.h>
+	<stdlib.h>
+
+1538437633 d:\tp 2\arrayemployees.h
+
+1538441324 source:d:\tp 2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayEmployees.h"
+
+1538428146 source:c:\users\home\desktop\tp 2 programacion\arrayemployees.c
+	"ArrayEmployees.h"
+	<stdio.h>
+	<stdlib.h>
+
+1538448362 c:\users\home\desktop\tp 2 programacion\arrayemployees.h
+
+1538447685 source:c:\users\home\desktop\tp 2 programacion\main.c
+	<stdio.h>
+	<stdlib.h>
+	"ArrayEmployees.h"
+
+1538482214 source:c:\users\ivan nahuel\desktop\programacion\tp 2 programacion\arrayemployees.c
+	"ArrayEmployees.h"
+	<stdio.h>
+	<stdlib.h>
+
+1538482214 c:\users\ivan nahuel\desktop\programacion\tp 2 programacion\arrayemployees.h
+
+1538482214 source:c:\users\ivan nahuel\desktop\programacion\tp 2 programacion\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayEmployees.h"
+
+1542743724 source:d:\ezequiel caballero 1 cuatri 2019\programacion y laboratorio\tp\tp2\compa ivan\tp_laboratorio_1-master\tp 2 programacion\arrayemployees.c
+	"ArrayEmployees.h"
+	<stdio.h>
+	<stdlib.h>
+
+1542743724 d:\ezequiel caballero 1 cuatri 2019\programacion y laboratorio\tp\tp2\compa ivan\tp_laboratorio_1-master\tp 2 programacion\arrayemployees.h
+
+1542743724 source:d:\ezequiel caballero 1 cuatri 2019\programacion y laboratorio\tp\tp2\compa ivan\tp_laboratorio_1-master\tp 2 programacion\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"ArrayEmployees.h"
+
